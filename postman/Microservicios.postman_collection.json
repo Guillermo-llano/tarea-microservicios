@@ -1,0 +1,9 @@
+{
+  "info": {"name": "Tarea Microservicios", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "item": [
+    {"name": "Listar usuarios", "request": {"method": "GET", "url": "http://localhost:8081/usuarios"}},
+    {"name": "Consultar usuario", "request": {"method": "GET", "url": "http://localhost:8081/usuarios/1"}},
+    {"name": "Crear pedido", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "body": {"mode": "raw", "raw": "{\n  \"producto\": \"Teclado mecánico\",\n  \"valor\": 180000,\n  \"usuarioId\": 1\n}"}, "url": "http://localhost:8082/pedidos"}},
+    {"name": "Listar pedidos", "request": {"method": "GET", "url": "http://localhost:8082/pedidos"}}
+  ]
+}
